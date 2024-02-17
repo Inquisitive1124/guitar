@@ -1,0 +1,42 @@
+.guitar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.string {
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    background-color: lavenderblush; /* Change background color to lavender */
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
+body {
+    background-image: url('images/guitar.jpg.crdownload'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .guitar {
+        flex-direction: column;
+    }
+}
+/* Styles for watermark */
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+
